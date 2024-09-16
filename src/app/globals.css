@@ -1,3 +1,4 @@
+
 :root {
   --background: #ffffff;
   --foreground: #000000;
@@ -19,13 +20,7 @@ body {
   scroll-behavior: smooth;
 }
 
-@layer utilities {
-  /* Remove or replace text-wrap: balance */
-  /* Use a more supported property */
-  .text-balance {
-    word-wrap: break-word;
-  }
-}
+
 
 @keyframes gradient-xy {
   0%, 100% {
