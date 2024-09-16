@@ -10,7 +10,7 @@ const floatingAnimation = {
   y: [-20, 20], // Y-axis floating motion
   transition: {
     repeat: Infinity,
-    repeatType: "reverse",
+    repeatType: "reverse" as const, // Correct typing for repeatType
     duration: 1.5,
     ease: "easeInOut",
   },

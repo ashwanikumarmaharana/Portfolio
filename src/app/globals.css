@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 :root {
   --background: #ffffff;
@@ -20,6 +24,13 @@ body {
   scroll-behavior: smooth;
 }
 
+
+@layer utilities {
+  /* Replace text-wrap: balance with a more supported property */
+  .text-balance {
+    word-wrap: break-word;
+  }
+}
 
 
 @keyframes gradient-xy {
