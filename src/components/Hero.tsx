@@ -33,7 +33,7 @@ const Hero = () => {
       {/* Content container */}
       <div className="relative z-10 text-center">
         {/* Header text */}
-        <div className="text-4xl md:text-6xl lg:text-8xl font-bold">
+        <div className="text-4xl top-[-100px] md:top-0 md:text-6xl lg:text-8xl font-bold">
           <h1 className="text-[#98B4CE]">Hi, I am</h1>
           <h1 className="text-[#e3694d]">Ashwani Maharana</h1>
         </div>
@@ -62,12 +62,12 @@ const Hero = () => {
         </motion.div>
 
         {/* Hero Description */}
-        <p className="text-lg md:text-3xl max-w-xl mx-auto mt-8 text-white/90 leading-relaxed">
+        <p className="font-semibold text-2xl md:text-3xl max-w-xl mx-4 md:mx-auto mt-8 text-white/90 leading-relaxed">
           A full-stack developer who enjoys the journey from idea inception to project success.
         </p>
 
         {/* Profile Image */}
-        <div className="mt-12 flex justify-center">
+        <div className="mt-10 flex justify-center">
           <Image
             src={profilepic}
             alt="Profile Picture"
