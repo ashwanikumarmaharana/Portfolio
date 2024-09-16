@@ -1,4 +1,3 @@
-c
 :root {
   --background: #ffffff;
   --foreground: #000000;
@@ -21,8 +20,10 @@ body {
 }
 
 @layer utilities {
+  /* Remove or replace text-wrap: balance */
+  /* Use a more supported property */
   .text-balance {
-    text-wrap: balance;
+    word-wrap: break-word;
   }
 }
 
@@ -61,4 +62,6 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   max-height: 4.5em; /* Adjust according to font size and line height */
+  line-clamp: 3; /* Standard property (not yet widely supported) */
 }
+
